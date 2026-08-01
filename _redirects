@@ -1,0 +1,7 @@
+# Redirect www to non-www (canonical domain)
+https://www.amautdc.com/* https://amautdc.com/:splat 301!
+
+# Old indexed URLs from previous site
+/contact-us /contact.html 301
+/how-much-does-a-fence-cost-ottawa /blog-residential-fencing-guide.html 301
+/fence-cost-ottawa /blog-residential-fencing-guide.html 301

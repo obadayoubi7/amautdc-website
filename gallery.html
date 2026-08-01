@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fencing & Deck Project Gallery Ottawa | AMA United Company</title>
+  <meta name="description" content="View 500+ completed projects — residential fencing, commercial fencing, custom decks, interlock driveways, and renovations across Ottawa, Orléans & Barrhaven.">
+  <meta property="og:title" content="Fencing & Deck Project Gallery Ottawa | AMA United Company">
+  <meta property="og:description" content="Browse our completed projects across Ottawa — fencing, decks, interlock, and renovations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amautdc.com/gallery.html">
+  <link rel="canonical" href="https://amautdc.com/gallery.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23D41F1F'/><text x='50%' y='72%' text-anchor='middle' font-size='22' font-weight='bold' font-family='Arial' fill='white'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<nav id="nav">
+  <a href="./index.html" class="nav-logo">
+    <img src="./assets/logo.png" alt="AMA United Company Logo">
+    <div class="nav-logo-text"><span>AMA United</span><span>Company</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="./index.html">Home</a>
+    <div class="nav-dropdown">
+      <a href="#" class="nav-drop-toggle">Services ▾</a>
+      <div class="nav-drop-menu">
+        <a href="./residential-fencing.html">Residential Fencing</a>
+        <a href="./commercial-fencing.html">Commercial Fencing</a>
+        <a href="./decks.html">Decks</a>
+        <a href="./interlock-renovations.html">Interlock &amp; Renovations</a>
+      </div>
+    </div>
+    <a href="./gallery.html" class="active">Gallery</a>
+    <a href="./blog.html">Blog</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="./index.html#contact">Contact</a>
+  </div>
+  <a href="./index.html#contact" class="nav-cta">Free Quote</a>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="./index.html">Home</a>
+  <a href="./residential-fencing.html">Residential Fencing</a>
+  <a href="./commercial-fencing.html">Commercial Fencing</a>
+  <a href="./decks.html">Decks</a>
+  <a href="./interlock-renovations.html">Interlock &amp; Renovations</a>
+  <a href="./gallery.html">Gallery</a>
+  <a href="./blog.html">Blog</a>
+  <a href="./faq.html">FAQ</a>
+  <a href="./index.html#contact">Contact</a>
+  <a href="./index.html#contact" style="color:var(--red)">Get a Free Quote →</a>
+</div>
+
+<header class="page-hero">
+  <div class="page-hero-content">
+    <p class="breadcrumb"><a href="./index.html">Home</a> / Gallery</p>
+    <h1>Project <em style="color:var(--red)">Gallery</em></h1>
+    <p class="section-sub" style="margin-top:16px;">500+ completed projects across Ottawa — fencing, decks, interlock, and renovations.</p>
+  </div>
+</header>
+
+<main>
+<section class="section section--dark">
+  <div class="container">
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filter" id="galleryFilter">
+      <button class="active" data-filter="all" onclick="filterGallery(this,'all')">All</button>
+      <button data-filter="fencing" onclick="filterGallery(this,'fencing')">Fencing</button>
+      <button data-filter="commercial" onclick="filterGallery(this,'commercial')">Commercial</button>
+      <button data-filter="decks" onclick="filterGallery(this,'decks')">Decks</button>
+      <button data-filter="interlock" onclick="filterGallery(this,'interlock')">Interlock</button>
+      <button data-filter="renovations" onclick="filterGallery(this,'renovations')">Renovations</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-1-hybrid-grey.jpg" alt="Modern hybrid grey fence with black posts and interlock patio, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Hybrid Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-2-composite-lights.jpg" alt="Composite deck with built-in step lights and black railings, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="commercial" onclick="openLightbox(this)">
+        <img src="./assets/commercial/commercial-1-chainlink-gate.jpg" alt="Commercial black chain link fence with gate, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Commercial Chain Link</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-2-hybrid-lights.jpg" alt="Grey hybrid fence with black posts and string lights, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Hybrid Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-3-composite-multilevel.jpg" alt="Multi-level composite deck with black aluminum railings, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Multi-Level Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="commercial" onclick="openLightbox(this)">
+        <img src="./assets/commercial/commercial-2-pvc-privacy.jpg" alt="Commercial PVC privacy fence around business property" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Commercial PVC Privacy</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-3-wood-install.jpg" alt="Cedar wood privacy fence installation in progress, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Wood Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-4-composite-railings.jpg" alt="Grey composite deck with black railings and staircase, Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-4-pvc-white-install.jpg" alt="White PVC privacy fence installation in Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">PVC Privacy Fence</div>
+      </div>
+
+      <div class="gallery-item" data-category="renovations" onclick="openLightbox(this)">
+        <img src="./assets/renovations/reno-1-bathroom-marble.jpg" alt="Luxury marble bathroom renovation with freestanding tub and glass shower" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Bathroom Renovation</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-5-pvc-white-aerial.jpg" alt="White PVC fence enclosing full backyard, aerial view" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">PVC Privacy Fence</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-5-composite-detail.jpg" alt="Close-up composite deck board detail with custom border" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck Detail</div>
+      </div>
+
+      <div class="gallery-item" data-category="renovations" onclick="openLightbox(this)">
+        <img src="./assets/renovations/reno-3-bathroom-classic.jpg" alt="Classic marble bathroom renovation with glass shower and dark vanity" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Bathroom Renovation</div>
+      </div>
+
+      <div class="gallery-item" data-category="commercial" onclick="openLightbox(this)">
+        <img src="./assets/commercial/commercial-3-chainlink-industrial.jpg" alt="Industrial chain link fence with access gate" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Industrial Chain Link</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-6-project.jpg" alt="Residential fencing project Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-6-composite.jpg" alt="Composite deck Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-7-project.jpg" alt="Residential fencing project Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-7-composite.jpg" alt="Custom composite deck Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-8-project.jpg" alt="Residential fencing project Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="decks" onclick="openLightbox(this)">
+        <img src="./assets/decks/deck-8-composite.jpg" alt="Composite deck with railings Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Composite Deck</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-9-project.jpg" alt="Fencing installation Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="commercial" onclick="openLightbox(this)">
+        <img src="./assets/commercial/commercial-4-ornamental-steel.jpg" alt="Commercial ornamental steel fence" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Commercial Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-10-project.jpg" alt="Fencing project Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="fencing" onclick="openLightbox(this)">
+        <img src="./assets/fencing/fence-11-project.jpg" alt="Fencing project Ottawa" loading="lazy">
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Residential Fencing</div>
+      </div>
+
+      <div class="gallery-item" data-category="interlock" onclick="openLightbox(this)">
+        <div class="img-placeholder img-placeholder--interlock" style="height:100%"><span>Interlock Driveway — Coming Soon</span></div>
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Interlock Driveway</div>
+      </div>
+
+      <div class="gallery-item" data-category="interlock" onclick="openLightbox(this)">
+        <div class="img-placeholder img-placeholder--interlock" style="height:100%"><span>Interlock Patio — Coming Soon</span></div>
+        <div class="gallery-overlay"><span>⊕</span></div>
+        <div class="gallery-item-label">Interlock Patio</div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-banner-content" data-reveal>
+    <p class="section-label" style="justify-content:center;">Have a Project in Mind?</p>
+    <h2>Let's Build Something<br><em style="color:var(--red)">You'll Love</em></h2>
+    <p>Every project in this gallery started with a free consultation. Yours can too.</p>
+    <a href="./index.html#contact" class="btn-primary">Get a Free Quote →</a>
+  </div>
+</section>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span id="lightbox-close" onclick="closeLightbox()">✕</span>
+  <div id="lightbox-content" style="text-align:center; color:rgba(255,255,255,0.5); font-family:var(--font-head); font-size:18px; letter-spacing:0.1em; text-transform:uppercase; padding:40px;">
+    <!-- REPLACE: when real images are added, this will show the clicked image -->
+    <div style="width:600px; max-width:90vw; height:400px; background:#1a1a1a; border:1px dashed rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center;">
+      <span id="lightbox-label">Project Photo</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html" class="nav-logo" style="margin-bottom:16px; display:inline-flex;">
+          <img src="./assets/logo.png" alt="AMA United Company Logo">
+          <div class="nav-logo-text"><span>AMA United</span><span>Company</span></div>
+        </a>
+        <p class="footer-tagline">Quality Craftsmanship. Guaranteed. Ottawa's trusted locally-owned contractor for fencing, decks, interlock, and renovations.</p>
+        <div class="footer-badge">Best of Ottawa — Top Vinyl Fencing Company</div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100090653326145" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="https://www.instagram.com/amautdc/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./residential-fencing.html">Residential Fencing</a></li>
+          <li><a href="./commercial-fencing.html">Commercial Fencing</a></li>
+          <li><a href="./decks.html">Decks</a></li>
+          <li><a href="./interlock-renovations.html">Interlock &amp; Renovations</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><span>📞</span><a href="tel:6138697775">613-869-7775</a></div>
+        <div class="footer-contact-item"><span>📞</span><a href="tel:6138900001">613-890-0001</a></div>
+        <div class="footer-contact-item"><span>✉️</span><a href="mailto:amautdc@hotmail.com">amautdc@hotmail.com</a></div>
+        <div class="footer-contact-item"><span>📍</span><span>668 Capricorn Circle, Ottawa, ON</span></div>
+        <div class="footer-contact-item"><span>🕐</span><span>Mon–Sat: 8am – 6pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 AMA United Company. All rights reserved. Ottawa, ON.</div>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<div id="float-cta">
+  <a href="tel:6138697775" class="float-call">📞 <span>613-869-7775</span></a>
+  <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('nav');
+  if (window.scrollY > 60) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+  const doc = document.documentElement, scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  document.getElementById('scroll-progress').style.width = (scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0) + '%';
+  const f = document.getElementById('float-cta');
+  if (f) { if (window.scrollY > 400) f.classList.add('show'); else f.classList.remove('show'); }
+});
+const hamburger = document.querySelector('.hamburger');
+if (hamburger) hamburger.addEventListener('click', function() {
+  const menu = document.getElementById('mobileMenu'), isOpen = menu.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen); hamburger.setAttribute('aria-expanded', isOpen);
+});
+document.querySelectorAll('.mobile-menu a').forEach(function(l) {
+  l.addEventListener('click', function() { document.getElementById('mobileMenu').classList.remove('open'); document.querySelector('.hamburger').classList.remove('open'); });
+});
+
+// Gallery filter
+function filterGallery(btn, category) {
+  document.querySelectorAll('.gallery-filter button').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(function(item) {
+    if (category === 'all' || item.getAttribute('data-category') === category) {
+      item.style.display = '';
+      item.style.animation = 'none';
+      requestAnimationFrame(function() { item.style.animation = ''; });
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+// Lightbox
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  const label = el.querySelector('.gallery-item-label');
+  const lb = document.getElementById('lightbox');
+  const content = document.getElementById('lightbox-content');
+  content.innerHTML = '';
+  if (img) {
+    const lbImg = document.createElement('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbImg.style.cssText = 'max-width:90vw;max-height:82vh;object-fit:contain;display:block;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,0.8);';
+    content.appendChild(lbImg);
+  }
+  if (label) {
+    const cap = document.createElement('p');
+    cap.textContent = label.textContent;
+    cap.style.cssText = 'color:rgba(255,255,255,0.6);font-family:var(--font-head);font-size:13px;letter-spacing:0.12em;text-transform:uppercase;margin-top:14px;text-align:center;';
+    content.appendChild(cap);
+  }
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
+// Scroll reveal
+(function() {
+  var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } }); }, { threshold: 0.08 });
+  document.querySelectorAll('[data-reveal], .gallery-item').forEach(function(el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>
+
