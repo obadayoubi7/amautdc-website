@@ -88,6 +88,8 @@ Target money keywords the 4 existing guides don't cover:
 
 Each post: FAQPage schema where genuine, internal links to matching service + location pages, one clear CTA to the quote form.
 
+**Section 2.2 is now fully complete (2026-08-02) — all 6 posts written in one session.** Filenames: `blog-fence-cost-ottawa.html`, `blog-pvc-vs-wood-fence-ottawa.html`, `blog-interlock-driveway-cost-ottawa.html`, `blog-deck-permit-ottawa.html`, `blog-composite-vs-pressure-treated-decks.html`, `blog-fence-installation-timeline.html`. Each post: 800+ words, BlogPosting schema, FAQPage schema (genuine, non-redundant Q&As), extensionless canonical/og:url/internal links, GA4 snippet, at least 2 internal links to the matching service page + 2–3 location pages, one CTA to `/#contact`. All pricing/warranty claims reuse figures already established elsewhere on the site (no invented permit fees or bylaw section numbers). Added to `sitemap.xml` and to the `blog.html` grid. Staggered publish dates Aug 2–13, 2026 for a natural posting cadence; each post cross-links to at least 2 of the others plus the relevant existing guide.
+
 ### 2.3 Internal linking + sitemap discipline
 
 Every new page: added to sitemap.xml with real lastmod, linked from at least 2 existing strong pages, links out to its service parent + 2 sibling locations. Blog index becomes a hub.
