@@ -8,6 +8,11 @@
   <meta property="og:title" content="AMA United Company | Quality Craftsmanship. Guaranteed.">
   <meta property="og:description" content="Premium fencing, decks, interlock and renovations across Ottawa. Locally owned, 500+ projects, 2-year warranty.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://amautdc.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://amautdc.com/assets/og-image.png">
   <meta property="og:url" content="https://amautdc.com/">
   <link rel="canonical" href="https://amautdc.com/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23D41F1F'/><text x='50%' y='72%' text-anchor='middle' font-size='22' font-weight='bold' font-family='Arial' fill='white'>A</text></svg>">
@@ -15,7 +20,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      const s = document.createElement('script');
+      s.type = 'module';
+      s.src = 'https://unpkg.com/@splinetool/viewer@1.12.98/build/spline-viewer.js';
+      document.head.appendChild(s);
+    });
+  </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -142,45 +154,45 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="./index.html" class="nav-logo">
-    <img src="./assets/logo.png" alt="AMA United Company Logo">
+  <a href="/" class="nav-logo">
+    <img src="./assets/logo.webp" alt="AMA United Company Logo" width="1179" height="1217">
     <div class="nav-logo-text">
       <span>AMA United</span>
       <span>Company</span>
     </div>
   </a>
   <div class="nav-links">
-    <a href="./index.html" class="active">Home</a>
+    <a href="/" class="active">Home</a>
     <div class="nav-dropdown">
       <a href="#" class="nav-drop-toggle">Services ▾</a>
       <div class="nav-drop-menu">
-        <a href="./residential-fencing.html">Residential Fencing</a>
-        <a href="./commercial-fencing.html">Commercial Fencing</a>
-        <a href="./decks.html">Decks</a>
-        <a href="./interlock-renovations.html">Interlock &amp; Renovations</a>
+        <a href="/residential-fencing">Residential Fencing</a>
+        <a href="/commercial-fencing">Commercial Fencing</a>
+        <a href="/decks">Decks</a>
+        <a href="/interlock-renovations">Interlock &amp; Renovations</a>
       </div>
     </div>
-    <a href="./gallery.html">Gallery</a>
-    <a href="./blog.html">Blog</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./index.html#contact">Contact</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/blog">Blog</a>
+    <a href="/faq">FAQ</a>
+    <a href="/#contact">Contact</a>
   </div>
-  <a href="./index.html#contact" class="nav-cta">Free Quote</a>
+  <a href="/#contact" class="nav-cta">Free Quote</a>
   <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="./index.html">Home</a>
-  <a href="./residential-fencing.html">Residential Fencing</a>
-  <a href="./commercial-fencing.html">Commercial Fencing</a>
-  <a href="./decks.html">Decks</a>
-  <a href="./interlock-renovations.html">Interlock &amp; Renovations</a>
-  <a href="./gallery.html">Gallery</a>
-  <a href="./blog.html">Blog</a>
-  <a href="./faq.html">FAQ</a>
-  <a href="./index.html#contact">Contact</a>
-  <a href="./index.html#contact" style="color:var(--red)">Get a Free Quote →</a>
+  <a href="/">Home</a>
+  <a href="/residential-fencing">Residential Fencing</a>
+  <a href="/commercial-fencing">Commercial Fencing</a>
+  <a href="/decks">Decks</a>
+  <a href="/interlock-renovations">Interlock &amp; Renovations</a>
+  <a href="/gallery">Gallery</a>
+  <a href="/blog">Blog</a>
+  <a href="/faq">FAQ</a>
+  <a href="/#contact">Contact</a>
+  <a href="/#contact" style="color:var(--red)">Get a Free Quote →</a>
 </div>
 
 <!-- HERO -->
@@ -200,7 +212,7 @@
       <p class="hero-sub" data-reveal data-reveal-delay="2">Quality craftsmanship, guaranteed. AMA United delivers premium fencing, decks, interlock, and renovations across Ottawa — built by locals, backed by a 2-year warranty.</p>
       <div class="hero-btns" data-reveal data-reveal-delay="3">
         <a href="#contact" class="btn-primary">Get a Free Quote</a>
-        <a href="./gallery.html" class="btn-outline">See Our Work</a>
+        <a href="/gallery" class="btn-outline">See Our Work</a>
       </div>
       <div class="hero-stats" data-reveal data-reveal-delay="4">
         <div class="hero-stat">
@@ -243,7 +255,7 @@
           <p class="service-card-tag">Residential</p>
           <h3>Residential Fencing</h3>
           <p class="service-card-desc">PVC, wood, hybrid, chain link, and ornamental iron fencing. Lifetime warranties on PVC. Built to handle Ottawa's freeze-thaw cycles.</p>
-          <a href="./residential-fencing.html" class="service-card-link">Learn More →</a>
+          <a href="/residential-fencing" class="service-card-link">Learn More →</a>
         </div>
       </div>
       <div class="service-card service-card--commercial" data-reveal data-reveal-delay="1">
@@ -253,7 +265,7 @@
           <p class="service-card-tag">Commercial</p>
           <h3>Commercial Fencing</h3>
           <p class="service-card-desc">Heavy-gauge chain link, security fencing, PVC, and ornamental iron for businesses, warehouses, schools, and industrial sites.</p>
-          <a href="./commercial-fencing.html" class="service-card-link">Learn More →</a>
+          <a href="/commercial-fencing" class="service-card-link">Learn More →</a>
         </div>
       </div>
       <div class="service-card service-card--deck" data-reveal data-reveal-delay="2">
@@ -263,7 +275,7 @@
           <p class="service-card-tag">Outdoor Living</p>
           <h3>Custom Decks</h3>
           <p class="service-card-desc">Composite, PVC, and pressure-treated decks. Multi-level designs, pergolas, and custom railings — designed for Ottawa's climate.</p>
-          <a href="./decks.html" class="service-card-link">Learn More →</a>
+          <a href="/decks" class="service-card-link">Learn More →</a>
         </div>
       </div>
       <div class="service-card service-card--interlock" data-reveal data-reveal-delay="3">
@@ -273,7 +285,7 @@
           <p class="service-card-tag">Hardscape &amp; Interior</p>
           <h3>Interlock &amp; Renovations</h3>
           <p class="service-card-desc">Interlock driveways, patios, walkways, and retaining walls. Plus kitchen, bathroom, basement, and exterior renovation work.</p>
-          <a href="./interlock-renovations.html" class="service-card-link">Learn More →</a>
+          <a href="/interlock-renovations" class="service-card-link">Learn More →</a>
         </div>
       </div>
     </div>
@@ -300,7 +312,7 @@
         <a href="#contact" class="btn-primary" style="margin-top:36px;">Get Your Free Quote</a>
       </div>
       <div class="about-visual" data-reveal data-reveal-delay="2">
-        <img src="./assets/renovations/reno-2-bathroom-modern.jpg" alt="Modern bathroom renovation with wood-panel shower and round backlit mirrors" loading="lazy" style="width:100%;aspect-ratio:4/5;min-height:480px;object-fit:cover;display:block;">
+        <img src="./assets/renovations/reno-2-bathroom-modern.webp" alt="Modern bathroom renovation with wood-panel shower and round backlit mirrors" loading="lazy" style="width:100%;aspect-ratio:4/5;min-height:480px;object-fit:cover;display:block;" width="318" height="159">
         <div class="about-badge">
           <div class="badge-num">10+</div>
           <div class="badge-text">Years of Excellence</div>
@@ -430,32 +442,32 @@
     </div>
     <div class="gallery-preview-grid">
       <div class="gallery-item">
-        <img src="./assets/fencing/fence-1-hybrid-grey.jpg" alt="Modern hybrid grey fence with black posts and interlock patio" loading="lazy">
+        <img src="./assets/fencing/fence-1-hybrid-grey.webp" alt="Modern hybrid grey fence with black posts and interlock patio" loading="lazy" width="1920" height="1440">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
       <div class="gallery-item">
-        <img src="./assets/decks/deck-2-composite-lights.jpg" alt="Composite deck with built-in step lights and black railings" loading="lazy">
+        <img src="./assets/decks/deck-2-composite-lights.webp" alt="Composite deck with built-in step lights and black railings" loading="lazy" width="1200" height="1600">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
       <div class="gallery-item">
-        <img src="./assets/fencing/fence-4-pvc-white-install.jpg" alt="White PVC privacy fence installation in Ottawa" loading="lazy">
+        <img src="./assets/fencing/fence-4-pvc-white-install.webp" alt="White PVC privacy fence installation in Ottawa" loading="lazy" width="1920" height="1440">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
       <div class="gallery-item">
-        <img src="./assets/decks/deck-3-composite-multilevel.jpg" alt="Multi-level composite deck with black aluminum railings" loading="lazy">
+        <img src="./assets/decks/deck-3-composite-multilevel.webp" alt="Multi-level composite deck with black aluminum railings" loading="lazy" width="738" height="1600">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
       <div class="gallery-item">
-        <img src="./assets/fencing/fence-3-wood-install.jpg" alt="Cedar wood privacy fence installation with gate" loading="lazy">
+        <img src="./assets/fencing/fence-3-wood-install.webp" alt="Cedar wood privacy fence installation with gate" loading="lazy" width="1920" height="1440">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
       <div class="gallery-item">
-        <img src="./assets/decks/deck-4-composite-railings.jpg" alt="Grey composite deck with black railings and staircase" loading="lazy">
+        <img src="./assets/decks/deck-4-composite-railings.webp" alt="Grey composite deck with black railings and staircase" loading="lazy" width="1179" height="1484">
         <div class="gallery-overlay"><span>⊕</span></div>
       </div>
     </div>
     <div style="text-align:center">
-      <a href="./gallery.html" class="btn-outline">View Full Gallery</a>
+      <a href="/gallery" class="btn-outline">View Full Gallery</a>
     </div>
   </div>
 </section>
@@ -469,12 +481,12 @@
       <p class="section-sub">From Orléans to Barrhaven, Kanata to Manotick, Findlay Creek to Riverside South — AMA United serves all Ottawa communities with the same crew, same quality, and same 2-year warranty.</p>
     </div>
     <div class="areas-grid" data-reveal>
-      <a href="./fencing-orleans.html" class="area-card">
+      <a href="/fencing-orleans" class="area-card">
         <div class="area-card-name">Orléans</div>
         <div class="area-card-services">Fencing · Decks · Interlock</div>
         <div class="area-card-arrow">→</div>
       </a>
-      <a href="./decks-barrhaven.html" class="area-card">
+      <a href="/decks-barrhaven" class="area-card">
         <div class="area-card-name">Barrhaven</div>
         <div class="area-card-services">Decks · Fencing · Renovations</div>
         <div class="area-card-arrow">→</div>
@@ -533,7 +545,7 @@
           <div class="blog-card-date">January 15, 2025</div>
           <h3 class="blog-card-title">The Complete Guide to Residential Fencing in Ottawa (2025)</h3>
           <p class="blog-card-excerpt">From PVC to cedar, choosing the right fence for Ottawa's climate is critical. We break down every material option, cost, and bylaw you need to know.</p>
-          <a href="./blog-residential-fencing-guide.html" class="blog-card-link">Read More</a>
+          <a href="/blog-residential-fencing-guide" class="blog-card-link">Read More</a>
         </div>
       </article>
       <article class="blog-card" data-reveal data-reveal-delay="1">
@@ -546,7 +558,7 @@
           <div class="blog-card-date">February 3, 2025</div>
           <h3 class="blog-card-title">Deck Design in Ottawa: Building Your Perfect Outdoor Space (2025)</h3>
           <p class="blog-card-excerpt">Composite, PVC, or pressure-treated? Single or multi-level? We walk you through every decision for the perfect Ottawa deck build.</p>
-          <a href="./blog-deck-design-guide.html" class="blog-card-link">Read More</a>
+          <a href="/blog-deck-design-guide" class="blog-card-link">Read More</a>
         </div>
       </article>
       <article class="blog-card" data-reveal data-reveal-delay="2">
@@ -559,12 +571,12 @@
           <div class="blog-card-date">March 10, 2025</div>
           <h3 class="blog-card-title">Interlock Driveways &amp; Patios in Ottawa: Everything You Need to Know</h3>
           <p class="blog-card-excerpt">Why interlock outperforms concrete and asphalt, how it handles Ottawa winters, and what to expect during the installation process.</p>
-          <a href="./blog-interlock-renovations-guide.html" class="blog-card-link">Read More</a>
+          <a href="/blog-interlock-renovations-guide" class="blog-card-link">Read More</a>
         </div>
       </article>
     </div>
     <div style="text-align:center; margin-top:40px;">
-      <a href="./blog.html" class="btn-outline">View All Posts</a>
+      <a href="/blog" class="btn-outline">View All Posts</a>
     </div>
   </div>
 </section>
@@ -607,7 +619,7 @@
       </div>
     </div>
     <div style="margin-top:32px;">
-      <a href="./faq.html" class="btn-ghost">See All FAQs</a>
+      <a href="/faq" class="btn-ghost">See All FAQs</a>
     </div>
   </div>
 </section>
@@ -720,8 +732,8 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="./index.html" class="nav-logo" style="margin-bottom:16px; display:inline-flex;">
-          <img src="./assets/logo.png" alt="AMA United Company Logo">
+        <a href="/" class="nav-logo" style="margin-bottom:16px; display:inline-flex;">
+          <img src="./assets/logo.webp" alt="AMA United Company Logo" width="1179" height="1217">
           <div class="nav-logo-text">
             <span>AMA United</span>
             <span>Company</span>
@@ -737,27 +749,27 @@
       <div class="footer-nav">
         <h4>Navigation</h4>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./residential-fencing.html">Residential Fencing</a></li>
-          <li><a href="./commercial-fencing.html">Commercial Fencing</a></li>
-          <li><a href="./decks.html">Decks</a></li>
-          <li><a href="./interlock-renovations.html">Interlock &amp; Renovations</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/residential-fencing">Residential Fencing</a></li>
+          <li><a href="/commercial-fencing">Commercial Fencing</a></li>
+          <li><a href="/decks">Decks</a></li>
+          <li><a href="/interlock-renovations">Interlock &amp; Renovations</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-nav">
         <h4>Service Areas</h4>
         <ul>
-          <li><a href="./fencing-orleans.html">Fencing in Orléans</a></li>
-          <li><a href="./fencing-kanata.html">Fencing in Kanata</a></li>
-          <li><a href="./fencing-barrhaven.html">Fencing in Barrhaven</a></li>
-          <li><a href="./fencing-nepean.html">Fencing in Nepean</a></li>
-          <li><a href="./fencing-stittsville.html">Fencing in Stittsville</a></li>
-          <li><a href="./fencing-gloucester.html">Fencing in Gloucester</a></li>
-          <li><a href="./decks-barrhaven.html">Decks in Barrhaven</a></li>
+          <li><a href="/fencing-orleans">Fencing in Orléans</a></li>
+          <li><a href="/fencing-kanata">Fencing in Kanata</a></li>
+          <li><a href="/fencing-barrhaven">Fencing in Barrhaven</a></li>
+          <li><a href="/fencing-nepean">Fencing in Nepean</a></li>
+          <li><a href="/fencing-stittsville">Fencing in Stittsville</a></li>
+          <li><a href="/fencing-gloucester">Fencing in Gloucester</a></li>
+          <li><a href="/decks-barrhaven">Decks in Barrhaven</a></li>
         </ul>
       </div>
       <div class="footer-contact">

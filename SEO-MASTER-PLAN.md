@@ -4,7 +4,7 @@
 
 **Business:** Ottawa fence contractor / deck builder / interlock (AMA United Company). Leads = quote-form submissions + phone calls.
 
-**Site:** Static HTML on Netlify (pretty URLs enabled), no git repo yet, no build step. GSC verification file present (`google11c7e5ed08484531.html`).
+**Site:** Static HTML on **Cloudflare Pages** (project `amautdc`, domains amautdc.com + www.amautdc.com; pretty URLs enabled), no git repo yet, no build step. GSC verification file present (`google11c7e5ed08484531.html`).
 
 ---
 
@@ -47,9 +47,9 @@
 
 Everything here is one working session for Claude Code. Order matters.
 
-- [ ] **1.1 Git + deploy pipeline (prerequisite for the agent).** `git init`, push to GitHub, connect Netlify to the repo (auto-deploy on push). Without this, no automation is safe or reviewable.
+- [x] **1.1 Git + deploy pipeline (prerequisite for the agent).** DONE 2026-08-01: `git init`, pushed to `github.com/obadayoubi7/amautdc-website` (public). Remaining manual step: in the Cloudflare Pages dashboard → project `amautdc` → Settings → Builds & deployments → "Connect to Git" → select `obadayoubi7/amautdc-website`, branch `main`, build command none (static site), output directory `/`. This requires your Cloudflare login so it's a one-time manual click-through, not automatable.
 - [ ] **1.2 URL canonicalization sweep.** Script over all 21 HTML files: rewrite internal `href="./x.html"` → `href="/x"`, canonicals + og:url → extensionless. Keep `index.html` links as `/`. Verify with a link-checker crawl afterward.
-- [ ] **1.3 Image optimization.** Batch-convert `assets/**` JPG/PNG → WebP (keep originals as fallback only if needed; Netlify serves WebP fine to all modern browsers). Add `loading="lazy"` + `width`/`height` attributes to all below-fold `<img>`. Compress `logo.png` (179KB → <20KB) or convert to SVG.
+- [ ] **1.3 Image optimization.** Batch-convert `assets/**` JPG/PNG → WebP (keep originals as fallback only if needed; Cloudflare Pages serves WebP fine to all modern browsers). Add `loading="lazy"` + `width`/`height` attributes to all below-fold `<img>`. Compress `logo.png` (179KB → <20KB) or convert to SVG.
 - [ ] **1.4 Homepage JS diet.** Pin Spline viewer version, lazy-load it after first interaction or replace hero with a static WebP + optional "view in 3D" click. Target: mobile LCP < 2.5s (verify via PageSpeed Insights API before/after).
 - [ ] **1.5 Schema cleanup.** Remove self-serving aggregateRating from Service schemas; add `Service` schema `url` fields; add og:image + twitter:card sitewide.
 - [ ] **1.6 Measurement.** Confirm GA4 (or a lightweight alternative) + conversion events on quote-form submit and tel: clicks. Confirm GSC property is verified and sitemap submitted. **This is the data the agent will learn from — non-negotiable.**
@@ -122,7 +122,7 @@ A **scheduled Claude Code agent** (weekly cadence) with a persistent memory ledg
 │               queue, informed by rising queries)    │
 │             • internal-link injections              │
 │ 5. ACT      implement on a branch → open PR         │
-│ 6. GATE     YOU review + merge → Netlify deploys    │
+│ 6. GATE     YOU review + merge → Cloudflare deploys │
 │ 7. LOG      write run report + update ledger        │
 └─────────────────────────────────────────────────────┘
 ```
@@ -145,7 +145,7 @@ seo-agent/
 
 ### Setup steps (another session — in order)
 
-1. `git init` + GitHub repo + Netlify Git integration (Phase 1.1).
+1. `git init` + GitHub repo + Cloudflare Pages Git integration (Phase 1.1) — done, repo pushed.
 2. Google Cloud service account with Search Console API read access to the GSC property; PageSpeed Insights API key. Store keys in `.env` (gitignored).
 3. Write the 4 scripts (Bun/Node, `sharp` for images, plain `fetch` for APIs — check package.json first per house rules; there isn't one yet, so `bun init`).
 4. Seed `PLAYBOOK.md` (from this plan), `keyword-map.json` (Section 2 keywords), `queue.md` (Section 2.1/2.2 priority tables).
