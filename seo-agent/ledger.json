@@ -1,0 +1,10 @@
+{
+  "runs": [
+    {
+      "date": "2026-08-02",
+      "action": "crawl-check + title-length fix",
+      "pages_changed": 27,
+      "notes": "First crawl-check run found 27 pages with >60-char titles (0 other issues: canonicals, internal links, JSON-LD, GA4 all clean). Fixed all 27 via scripts/fix-long-titles.mjs. No GSC data available yet to measure CTR impact of the title changes."
+    }
+  ]
+}
