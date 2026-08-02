@@ -67,7 +67,7 @@ Build the missing pages using the existing fencing-kanata.html pattern (local FA
 | Priority | Pages |
 |---|---|
 | P1 | ✅ DONE 2026-08-01: interlock-kanata, interlock-barrhaven, interlock-orleans, interlock-nepean |
-| P2 | decks-kanata, decks-orleans, decks-nepean, decks-stittsville |
+| P2 | ✅ DONE 2026-08-01: decks-kanata, decks-orleans, decks-nepean, decks-stittsville |
 | P3 | fencing-manotick, fencing-riverside-south, fencing-findlay-creek, fencing-greely |
 | P4 | interlock-stittsville, interlock-gloucester, decks-gloucester |
 
