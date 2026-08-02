@@ -69,7 +69,9 @@ Build the missing pages using the existing fencing-kanata.html pattern (local FA
 | P1 | ✅ DONE 2026-08-01: interlock-kanata, interlock-barrhaven, interlock-orleans, interlock-nepean |
 | P2 | ✅ DONE 2026-08-01: decks-kanata, decks-orleans, decks-nepean, decks-stittsville |
 | P3 | ✅ DONE 2026-08-01: fencing-manotick, fencing-riverside-south, fencing-findlay-creek, fencing-greely |
-| P4 | interlock-stittsville, interlock-gloucester, decks-gloucester |
+| P4 | ✅ DONE 2026-08-01: interlock-stittsville, interlock-gloucester, decks-gloucester |
+
+**Section 2.1 is now fully complete (2026-08-01) — 11 new location pages built across one session.** Every page follows the Service + BreadcrumbList + FAQPage schema pattern, unique local content, cross-linked from parent service pages (residential-fencing.html, decks.html, interlock-renovations.html) and the homepage footer, and added to sitemap.xml. Also fixed two pre-existing stale placeholder links found along the way (Barrhaven fencing card, Orléans deck card both pointed to `/#contact` instead of their real pages).
 
 Rules: one primary intent per page, unique local content (neighbourhoods, soil/climate notes, local bylaw specifics), min ~600 words of real substance, cross-link service page ↔ location pages ↔ sibling locations. **Never publish thin near-duplicates** — if a page can't be differentiated, don't build it.
 
