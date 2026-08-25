@@ -2,6 +2,12 @@
   "runs": [
     {
       "date": "2026-08-25",
+      "action": "Full re-audit (scored 71/100) + fixed meta description lengths and heading hierarchy sitewide",
+      "pages_changed": 41,
+      "notes": "Ran a scored audit against seo-audit skill's framework post-deploy-fix. Score: 71/100 (Crawlability 16/20, Technical 15/20, On-page 15/20, Content 11/15, Local/Authority 10/15, Competitive position 4/10). New findings not previously caught: (1) 18/41 pages had meta descriptions over 160 chars (up to 208) -- crawl-check.mjs only checks title length, not description length, so this had been invisible. Fixed all 18 to 143-159 chars, preserved all facts/CTAs, no invented content. (2) Sitewide heading hierarchy skip: footer partial used <h4> for 5 labels (Navigation/Contact/Service Areas/Business Hours/Services) with zero <h3> anywhere on any page, so every single page skipped H2->H4. Bumped to <h3> sitewide (41 files). (3) Confirmed clean: zero duplicate titles, zero duplicate meta descriptions, alt text on all 255 images, schema types all valid (FAQPage/BreadcrumbList/GeneralContractor/BlogPosting/Organization), og:image on all pages, only one legitimate AggregateRating (homepage). Bumped sitemap.xml lastmod to 2026-08-25 for all 41 URLs since every page changed. Verified crawl-check.mjs clean and the fix deployed live (Cloudflare auto-deploy confirmed working a 3rd time in a row -- pipeline fix is holding). NOT fixed, needs owner input: (a) homepage says '10+ years in business' / 'over a decade' but GBP lists opening date March 28 2022 (~4.5yr) -- factual discrepancy, don't know which is right, flagged to owner. (b) Core Web Vitals still unverifiable -- PSI public endpoint rate-limited without an API key. (c) Backlink/citation NAP consistency across BBB/Houzz/Infobel/Wheree not audited -- no tool access for this."
+    },
+    {
+      "date": "2026-08-25",
       "action": "Google Business Profile: added 5 missing service areas",
       "pages_changed": 0,
       "notes": "Follow-up to the same-day GBP audit. Added Stittsville, Gloucester, Riverside South, Findlay Creek, and Greely as service areas — all 5 have dedicated location pages on the site (fencing/decks/interlock) but were absent from the GBP service area list, which only covered Ottawa/Kanata/Nepean/Manotick/Orleans/Barrhaven. Service area now has 11 entries total, matching the site's real coverage. Pending Google review (~10 min typical)."
