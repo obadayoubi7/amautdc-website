@@ -2,6 +2,12 @@
   "runs": [
     {
       "date": "2026-08-25",
+      "action": "Google Business Profile: added 5 missing service areas",
+      "pages_changed": 0,
+      "notes": "Follow-up to the same-day GBP audit. Added Stittsville, Gloucester, Riverside South, Findlay Creek, and Greely as service areas — all 5 have dedicated location pages on the site (fencing/decks/interlock) but were absent from the GBP service area list, which only covered Ottawa/Kanata/Nepean/Manotick/Orleans/Barrhaven. Service area now has 11 entries total, matching the site's real coverage. Pending Google review (~10 min typical)."
+    },
+    {
+      "date": "2026-08-25",
       "action": "Google Business Profile: added missing category, rewrote description, published fresh post",
       "pages_changed": 0,
       "notes": "Direct GBP audit (business.google.com, verified owner access) found: categories were Fence contractor (primary) + Deck builder + General contractor — no category covering interlock/hardscoping despite it being one of three core services, likely excluding the listing from Map Pack results for 'interlock ottawa' and similar. Added 'Paving contractor' as a 4th category. Description was 148 chars, mentioned only fencing (no decks/interlock/Ottawa keywords), and had a stray unformatted email address appended ('...from residential to commercial\\nAMAutdc@hotmail.com') — rewrote to 343 chars covering all three services, service area (Ottawa/Kanata/Nepean/Barrhaven/Orleans/Manotick), and existing trust claims already established on the site (in-house crews, 2-year warranty, free on-site quotes — no new/unverifiable facts added). Both edits are Google-side pending review (~10 min typical). Also found the last GBP Post was 4 months stale (May 22) against a recommended ~weekly cadence; published a new text-only Update post (no image available to attach) with a 'Learn more' button linking to /contact, now pending Google's post-review queue. Confirmed via the panel: 5.0 stars / 180 reviews, service area covers Ottawa/Kanata/Nepean/Manotick/Orleans/Barrhaven but is missing Stittsville/Gloucester/Riverside South/Findlay Creek/Greely despite those having dedicated site location pages — worth adding in a future session. Profile Strength still shows 'Complete Info' as outstanding (exterior photo, holiday hours for Labour Day, etc. — human tasks, camera/judgment required)."
