@@ -1,6 +1,12 @@
 {
   "runs": [
     {
+      "date": "2026-08-25",
+      "action": "CRITICAL: fixed broken Cloudflare Pages deploy pipeline",
+      "pages_changed": 0,
+      "notes": "Full SEO audit discovered the live site (amautdc.com) had been frozen at a ~June 18 2026 snapshot since Phase 2 began — every deploy since commit 2737862 (Aug 1) was silently failing. Root cause: Cloudflare Pages Build command was set to `npm run build` (leftover 'Analog' framework preset default) but package.json (added for the sharp image-optimization script) has no build script, so every build errored with `npm error Missing script: \"build\"` and the site kept serving the last successful pre-Phase-2 deploy. Effect: all 11 new location pages, all 6 blog posts, GA4 tracking, the Spline version pin, and the title-length fixes existed only in GitHub for 23 days and were invisible to Google and to visitors — extensionless URLs like /interlock-kanata and /blog-fence-cost-ottawa returned HTTP 200 but silently served homepage content (soft-404), and the live sitemap.xml only listed the old ~20-URL set. Fixed via Cloudflare dashboard (Pages > amautdc > Settings > Build configuration): cleared Build command and Build output directory to empty (static site, no build step, output = repo root). Retried the de9bddd deployment — succeeded in ~15s. Verified live: /interlock-kanata and /blog-fence-cost-ottawa now serve correct unique content, gtag.js (G-RB3FQ7F1N6) is now firing, and /sitemap.xml now lists all 41 URLs matching crawl-check.mjs's count. This is almost certainly the primary reason rankings hadn't moved despite two months of on-paper SEO work — verdict pending 2-4 weeks of GSC data once ingestion exists, but treat any pre-2026-08-25 ranking/impression data as measuring a stale, incomplete version of the site."
+    },
+    {
       "date": "2026-08-02",
       "action": "crawl-check + title-length fix",
       "pages_changed": 27,

@@ -4,6 +4,7 @@ Living strategy doc for the automated SEO agent (Section 4 of `../SEO-MASTER-PLA
 
 ## Status
 
+- **Deploy pipeline:** BROKEN from 2026-08-02 to 2026-08-25 — Cloudflare Pages Build command (`npm run build`, a leftover Analog-framework default) failed on every push because `package.json` has no `build` script. The live site silently kept serving a ~2026-06-18 snapshot (extensionless URLs 200'd but served homepage content) while every Phase 2 commit sat undeployed in GitHub. Fixed 2026-08-25 by clearing Build command + Build output directory in Cloudflare Pages settings (static site, no build step) and retrying the deployment. **Any GSC/analytics data from before 2026-08-25 reflects the stale pre-Phase-2 site, not the current one — don't trust it for before/after comparisons.** See ledger.json 2026-08-25 entry for full detail. Re-check Cloudflare deploy status (Pages dashboard > amautdc > Deployments, latest commit should show a green check, not "No deployment available") after every future push until this has a few clean deploys in a row.
 - **Phase 1 (technical foundation):** complete 2026-08-01.
 - **Phase 2.1 (service × location matrix):** complete 2026-08-01 — 15 location pages total.
 - **Phase 2.2 (blog content):** complete 2026-08-02 — 6 posts published.
